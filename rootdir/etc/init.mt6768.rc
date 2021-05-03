@@ -45,6 +45,9 @@ on post-fs
     mount none /system/lib/libdpframework.so /vendor/lib/libdpframework.so bind
     mount none /system/lib64/libdpframework.so /vendor/lib64/libdpframework.so bind
 	
+    # Bind mount libvpud_vcodec
+    mount none /system/lib/libvpud_vcodec.so /vendor/lib/libvpud_vcodec.so bind
+	
 on property:sys.boot_completed=1
     # Restrict permissions to socket file 
     # to hide Magisk & co.
